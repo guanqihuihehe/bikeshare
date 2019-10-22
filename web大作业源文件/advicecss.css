@@ -1,0 +1,45 @@
+#formmax{
+	background-color:rgba(16,9,65,0.5);
+	width: 60%;
+	
+	
+}
+#form1{
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	font-size: 50px;
+	font-family: "imprint mt shadow";
+	margin: 0;
+	
+}
+.body11{
+	background: url(1406758808616186.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+#ta1{
+	padding-left: 100px;
+}
+#form2{
+	font-size: 20px;
+	padding: 0,20px,0,20px;
+	color:#F0FFFF;
+}
+#td1{
+	font-size: 30px;
+	color: #7FFFD4;
+}
+#wordsm{
+	font-size: 25px;
+	color: aliceblue;
+}
+#write{
+	font-size: 20px;
+}
+#but{
+	height: 40px;
+	width: 80px;
+	font-size: 20px;
+	font-family: "arial rounded mt bold";
+}

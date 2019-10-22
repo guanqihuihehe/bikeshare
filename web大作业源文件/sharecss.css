@@ -1,0 +1,67 @@
+
+ .d1 {
+        
+     
+
+    }
+.d1:before {
+        background: url(img_1.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;  
+		height: 1400px;
+                 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-filter:blur(7px);
+        filter: blur(7px);
+    }
+
+
+#tb1{
+	
+	padding: 100px 200px 0 200px;
+}
+.td{
+	padding: 70px;
+	color: #7FFFD4;
+	font-size: 30px;
+	font-family: "agency fb";
+	text-decoration: none;
+}
+.td2{
+	font-family: "arial narrow";
+	font-size: 20px;
+	border: none;
+}
+.td3{
+	border:  1px;
+	border-color: #00FFFF;
+}
+table a:hover{
+	border-bottom: 2px solid #CCCCCC;
+    transition: 0.2s all linear;/*所有属性在0.2秒内线性运动*/
+	
+    
+}
+.zi{
+	margin-left: 12%;
+	font-size: 25px;
+	font-style: italic;
+	color: azure;
+}
+.zi2{
+	font-size: 25px;
+	font-style: italic;
+	text-align: right;
+	margin-right: 15%;
+	color: azure;
+}
+.zi3{
+	text-align: center;
+	font-size: 45px;
+	color: cyan;
+	text-decoration: none;
+}

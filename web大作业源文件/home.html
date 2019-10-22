@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<script>
+			
+			function pageScroll()
+		    {
+				//把内容滚动指定的像素数（第一个参数是向右滚动的像素数，第二个参数是向下滚动的像素数）
+				window.scrollBy(0,-100);
+				//延时递归调用，模拟滚动向上效果    
+				scrolldelay = setTimeout('pageScroll()',10);    
+				//获取scrollTop值，声明了DTD的标准网页取document.documentElement.scrollTop，否则取document.body.scrollTop；因为二者只有一个会生效，另一个就恒为0，所以取和值可以得到网页的真正的scrollTop值    
+				var sTop=document.documentElement.scrollTop+document.body.scrollTop;    
+				//判断当页面到达顶部，取消延时代码（否则页面滚动到顶部会无法再向下正常浏览页面）    
+				if(sTop==0) clearTimeout(scrolldelay);   
+		    }	
+			
+		</script>		
+		 
+<link type="text/css" rel="stylesheet"  href="homecss.css" /> 
+
+
+
+		
+		
+		<style type="text/css">
+			
+            nav a:hover{
+	            color: aqua;
+			}
+            
+		</style>
+		
+	</head>
+	<body>
+		<header>
+			<img src="（jian）1406759147289135.jpg" id="pictop"/>
+		</header>
+		<nav id="nav">
+			<ul >
+				<li >
+					<a href="home.html" >
+						home
+					</a>
+				</li>
+				<li><a href="#">employee</a>
+					<ul>
+						<li>
+							<a href="map.html" target="_blank">map</a>
+						</li>
+						<li>
+							<a href="map.html" target="_blank">cost</a>
+						</li>
+						<li>
+							<a href="share.html" target="_blank">story</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="using.html" target="_blank">
+						guide
+					</a>
+				</li>
+				<li onclick="pageScroll()" id="bs1">
+					<span id="bs2" >
+						bike sharing
+					</span> 
+				</li>
+				<li>
+					<a href="advice.html" target="_blank">
+						review
+					</a>
+				</li>
+				<li><a href="#">employer</a>
+					<ul>
+						<li>
+							<a href="culture.html" target="_blank">culture</a>
+						</li>
+						<li>
+							<a href="legal.html" target="_blank">insurance</a>
+						</li>
+						<li>
+							<a href="legal.html" target="_blank">legislation</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">mine</a>
+					<ul>
+						<li>
+							<a href="mine.html" target="_blank">registration</a>
+						</li>
+						<li>
+							<a href="mine.html" target="_blank">log in</a>
+						</li>
+						<li>
+							<a href="mine.html" target="_blank">log out</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+			
+		</nav>
+
+		<br /><br /><hr id="line" /><br /><br />
+		
+		<main >
+			<p style="margin-top: 6.25rem;">
+				
+				<table align="center" id="content" cellpadding="1" cellspacing="1">
+					
+					<tr >
+						<td rowspan="4" align="left">
+							<img src="pc-science.png" id="pic1"/>
+						</td>
+						<td id="word1" style="color:#000000;">
+								Technology
+						</td>
+					</tr>
+					<tr>
+						<td id="word2" rowspan="3" style="color:#000000;">
+							Bike Sharing is the world's leading pileless bike sharing platform. Users can unlock their bicycles through mobile phones and enjoy the shared travel service of riding whenever and wherever possible. Shared bicycles for better ride, leading mobile Internet of Things intelligent lock, the world's leading AI big data platform "Singularity" system. 
+					</tr>
+					
+				</table>
+			</p>
+			<br /><br /><hr id="line" /><br /><br />
+			<p style="margin-top: 6.25rem;">
+				<table align="center" id="content" cellpadding="1" cellspacing="1">
+					<tr >
+						
+						<td id="word1" style="color:#000000;">
+								Globalization
+						</td>
+						<td rowspan="3" align="left">
+							<img src="pc-global.png" id="pic2"/>
+						</td>
+					</tr>
+					<tr>
+						<td id="word4" style="color:#000000;">
+							Bike Sharing provides services in more than 250 cities in 21 countries around the world. Overseas operating cities have more than 50, and more than 100,000 shared bicycles have been put into operation, providing more than 10 million rides for overseas users.
+		
+						</td>
+					</tr>
+					
+				</table>
+			</p>
+			<br /><br /><hr id="line" /><br /><br />
+			<p style="margin-top: 6.25rem;">
+				<table align="center" id="content" cellpadding="1" cellspacing="1">
+					<tr >
+						<td rowspan="4" align="left">
+							<img src="pc-social-duty.png" id="pic1"/>
+						</td>
+						<td id="word1" style="color:#000000;">
+							social responsibility	
+						</td>
+					</tr>
+					<tr>
+						<td id="word2" rowspan="3" style="color:#000000;">
+							Bike Sharing is committed to advocating the concept of green travel. By integrating bicycle production capacity and supply chain, it promotes the concept of shared bicycle travel around the world and provides convenient and efficient green travel services for major cities to meet the needs of users for a better life.
+						</td>
+					</tr>
+					
+				</table>
+			</p>
+			<br /><br /><hr id="line" /><br /><br />
+			<p style="margin-top: 6.25rem;">
+				<table align="center" id="content" cellpadding="1" cellspacing="1">
+					<tr >
+						
+						<td id="word1" style="color:#000000;">
+							stories	
+						</td>
+						<td rowspan="3" align="left" >
+							<img src="a55ffd52ly1g4bujqu5shj21uo18gqg2.jpg" id="pic2"/>
+						</td>
+					</tr>
+					<tr>
+						<td id="word4" style="color:#000000;">
+							Sharing bicycles, the short brilliance of an era seems to usher in the end, scattered around, they are all kinds of colors, their body oil is no longer bright, everywhere is also rust stains, some can stand, some have been unable to stand. Waiting for the fate to take turns, take them back, there will be a new era.
+						</td>
+					</tr>
+					
+				</table>
+			</p>
+			<br /><br /><hr id="line" /><br /><br />
+		</main>
+		<footer>
+			<br />
+			<table align="center" id="content" cellpadding="1" cellspacing="1" >
+				<tr>
+					<td>
+						<div id="contact1">
+							<span style="font-size: 1.25rem;">contact us:</span><br /><br />
+							tel 021-61679500<br />
+							&nbsp;&nbsp;&nbsp;WeChat &nbsp;&nbsp;&nbsp;&nbsp;guaniqhui123<br />
+							Introduction to Human-Computer Interaction Course Group<br/>Shenzhen University<br />
+						</div>
+					</td>
+					<td id="contact2">
+						<span style="text-align: center;">
+							Wechat Scan Code, Use Vehicle Immediately
+						</span>
+						<br />
+						<br />
+						<img src="gqh.jpg.png" id="img1" />
+					</td>
+					<td id="contact3">
+						
+						Social media<br /><br />
+						
+						<a href="https://weibo.com/u/5213707963" target="_blank" style="text-decoration: none;color: #FFFFFF;">
+							<img src="u=1838264935,816592769&fm=26&gp=0.jpg" id="img2"/>
+						</a>
+						<a href="https://www.zhihu.com/topic/20062448/hot" target="_blank" style="text-decoration: none; color: #FFFFFF;"  >
+							<img src="fd56780c37f0b316c56f27fe8b388532_l.jpg" id="img2"/>
+						</a><br />
+						
+					</td>
+				</tr>
+			</table>
+			
+			<br />
+		</footer>
+		<div id="last">
+			Copyright © 2019 gqh Inc. 保留所有权利。
+		</div>
+	</body>
+	
+</html>

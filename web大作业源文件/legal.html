@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>culture</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<script>
+			
+			function pageScroll()
+		    {
+				//把内容滚动指定的像素数（第一个参数是向右滚动的像素数，第二个参数是向下滚动的像素数）
+				window.scrollBy(0,-100);
+				//延时递归调用，模拟滚动向上效果    
+				scrolldelay = setTimeout('pageScroll()',10);    
+				//获取scrollTop值，声明了DTD的标准网页取document.documentElement.scrollTop，否则取document.body.scrollTop；因为二者只有一个会生效，另一个就恒为0，所以取和值可以得到网页的真正的scrollTop值    
+				var sTop=document.documentElement.scrollTop+document.body.scrollTop;    
+				//判断当页面到达顶部，取消延时代码（否则页面滚动到顶部会无法再向下正常浏览页面）    
+				if(sTop==0) clearTimeout(scrolldelay);   
+		    }	
+			
+		</script>		
+		 
+<link type="text/css" rel="stylesheet"  href="homecss.css" /> 
+<link type="text/css" rel="stylesheet"  href="legalcss.css" /> 
+
+
+		
+		
+		<style type="text/css">
+			
+            nav a:hover{
+	            color: aqua;
+			}
+            
+		</style>
+		
+	</head>
+	<body id="body2">
+		
+		<nav id="nav">
+			<ul >
+				<li >
+					<a href="home.html" >
+						home
+					</a>
+				</li>
+				<li><a href="#">employee</a>
+					<ul>
+						<li>
+							<a href="map.html" target="_blank">map</a>
+						</li>
+						<li>
+							<a href="map.html" target="_blank">cost</a>
+						</li>
+						<li>
+							<a href="share.html" target="_blank">story</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="using.html" target="_blank">
+						guide
+					</a>
+				</li>
+				<li onclick="pageScroll()" id="bs1">
+					<span id="bs2" >
+						bike sharing
+					</span> 
+				</li>
+				<li>
+					<a href="advice.html" target="_blank">
+						review
+					</a>
+				</li>
+				<li><a href="#">employer</a>
+					<ul>
+						<li>
+							<a href="culture.html" target="_blank">culture</a>
+						</li>
+						<li>
+							<a href="legal.html" target="_blank">insurance</a>
+						</li>
+						<li>
+							<a href="legal.html" target="_blank">legislation</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">mine</a>
+					<ul>
+						<li>
+							<a href="mine.html" target="_blank">registration</a>
+						</li>
+						<li>
+							<a href="mine.html" target="_blank">log in</a>
+						</li>
+						<li>
+							<a href="mine.html" target="_blank">log out</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+			
+		</nav>
+
+		<br /><br /><br /><br /><br />
+		
+		<main>
+			<table align="center" id="xieyi" cellpadding="1" cellspacing="1">
+				<tr>
+					<td id="top">
+						Service Agreement<br /><br />
+					</td>
+				</tr>
+				<tr >
+					<td >
+						 Content and scope of services<br /><br /><br />
+    After landing, you can send us a business cooperation application, manage the application record and check our reply after filling in the relevant information on the relevant service page.
+Special tips and instructions:
+When we reply on the relevant service page with the sign of "failed audit", it means that the cooperation application submitted by you has been rejected. You can consult us further about the reasons for our rejection. We may also contact you to inform you of the reasons for rejection and discuss the possible acceptable cooperation plan.
+When we reply on the relevant service page with the sign of "approved by audit", it does not mean that we have reached an agreement with you on the content of the business cooperation you applied for and are regarded as signing a binding cooperation agreement, but only that we agree to further discuss with you on the cooperation matters you applied for. If the two sides decide to carry out relevant cooperation, they must sign relevant cooperation agreements separately.
+We will not charge you any fee for this service, nor will we provide you with any kind of fee information or content.
+<br /><br /><hr id="line" /><br /><br />
+					</td>
+					
+				</tr>
+                
+				<tr >
+					<td >
+						 User account<br /><br /><br />
+						 After successful registration, each user will get an exclusive and unique user account. The right to use the account belongs only to the initial applicant registrant. Giving, borrowing, renting, transferring or selling are prohibited. Users bear the responsibility of keeping their accounts and passwords. In addition to our fault, users are fully responsible for all activities under their accounts and passwords, regardless of whether such activities cause any losses to users themselves or third parties.
+If you find that your account has been illegally used by others, you should inform us immediately. You understand that it takes reasonable time for us to act on any of your requests, and therefore we are not responsible for the consequences that have occurred before we act, except for our fault.
+We have the right to prohibit you from using the account or information if the information you submit on the relevant service page violates laws and regulations or national policy requirements or infringes on the legitimate rights and interests of any third party.
+<br /><br /><hr id="line" /><br /><br />
+					</td>
+					
+				</tr>
+				
+			</table>
+		</main>
+		
+		<footer>
+			<br />
+			<table align="center" id="content" cellpadding="1" cellspacing="1" >
+				<tr>
+					<td>
+						<div id="contact1">
+							<span style="font-size: 1.25rem;">contact us:</span><br /><br />
+							tel 021-61679500<br />
+							&nbsp;&nbsp;&nbsp;WeChat &nbsp;&nbsp;&nbsp;&nbsp;guaniqhui123<br />
+							Introduction to Human-Computer Interaction Course Group<br/>Shenzhen University<br />
+						</div>
+					</td>
+					<td id="contact2">
+						<span style="text-align: center;">
+							Wechat Scan Code, Use Vehicle Immediately
+						</span>
+						<br />
+						<br />
+						<img src="gqh.jpg.png" id="img1" />
+					</td>
+					<td id="contact3">
+						
+						Social media<br /><br />
+						
+						<a href="https://weibo.com/u/5213707963" target="_blank" style="text-decoration: none;color: #FFFFFF;">
+							<img src="u=1838264935,816592769&fm=26&gp=0.jpg" id="img2"/>
+						</a>
+						<a href="https://www.zhihu.com/topic/20062448/hot" target="_blank" style="text-decoration: none; color: #FFFFFF;"  >
+							<img src="fd56780c37f0b316c56f27fe8b388532_l.jpg" id="img2"/>
+						</a><br />
+						
+					</td>
+				</tr>
+			</table>
+			
+			<br />
+		</footer>
+		<div id="last">
+			Copyright © 2019 gqh Inc. 保留所有权利。
+		</div>
+	</body>
+	
+</html>
